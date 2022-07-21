@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 200px;
+  grid-template-rows: 200px 100px;
+  grid-auto-rows: 100px;
+  gap: 1.5rem;
+}
+
+.grid > div {
+  border: 1px solid rgb(138, 43, 226);
+  border-radius: 4px;
+  background-color: rgba(138, 43, 226, 0.8);
+  padding: 1rem;
+  color: #fff;
+  font-size: 120%;
+  display: grid;
+  place-items: center;
+}
